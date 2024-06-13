@@ -1,0 +1,14 @@
+{
+  "name": "Nexter",
+  "version": "1.0.0",
+  "description": "Nexter webpage",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "author": "Alexey",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.4"
+  }
+}

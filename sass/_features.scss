@@ -1,0 +1,30 @@
+.features {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+
+  &-image {
+    fill: $color-primary;
+    height: 3.4rem;
+    width: 3.4rem;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+  }
+
+  &-text {
+    font-size: 1.6rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}

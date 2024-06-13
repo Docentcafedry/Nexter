@@ -1,0 +1,16 @@
+.btn,
+.btn:link,
+.btn:visited {
+  color: $color-grey-light-1;
+  background-color: $color-primary;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--primary {
+    background-color: $color-primary-dark;
+  }
+}

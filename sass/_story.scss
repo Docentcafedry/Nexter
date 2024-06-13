@@ -1,0 +1,22 @@
+.story-images {
+  background-color: $color-grey-light-2;
+  grid-column: full-start / col-end 4;
+  grid-row: 3 / 4;
+}
+
+.story-content {
+  background-color: $color-grey-light-1;
+  grid-column: col-start 5 / full-end;
+  grid-row: 3 / 4;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.story-text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
