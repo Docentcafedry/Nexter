@@ -79,6 +79,27 @@ body {
   background-color: #c69963;
   grid-column: start-sidebar/end-sidebar;
   grid-row: 1/-1;
+  justify-self: center;
+}
+.sidebar .nav_button {
+  border: none;
+  height: 0.3rem;
+  width: 3.5rem;
+  padding: 0.1rem 0;
+  display: inline-block;
+}
+.sidebar .nav_button::before, .sidebar .nav_button::after {
+  content: "";
+  height: 0.3rem;
+  width: 3.5rem;
+  background-color: #f9f7f6;
+  display: inline-block;
+}
+.sidebar .nav_button::before {
+  transform: translateY(-2rem);
+}
+.sidebar .nav_button::after {
+  transform: translateY(-1.7rem);
 }
 
 .header {
@@ -326,9 +347,6 @@ body {
 
 .footer-link:link,
 .footer-link:visited {
-  display: flex;
-  align-items: start;
-  justify-content: center;
   font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
