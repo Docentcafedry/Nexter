@@ -2,7 +2,6 @@
   background-color: $color-primary;
   grid-column: start-sidebar / end-sidebar;
   grid-row: 1 / -1;
-  justify-self: center;
 
   .nav_button {
     border: none;
@@ -10,6 +9,7 @@
     width: 3.5rem;
     padding: 0.1rem 0;
     display: inline-block;
+    transform: translate(-20%, -100%);
 
     &::before,
     &::after {

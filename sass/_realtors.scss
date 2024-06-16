@@ -2,4 +2,33 @@
   background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
   grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &--list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+}
+
+.realtor {
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__img {
+    height: 5.5rem;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
 }
