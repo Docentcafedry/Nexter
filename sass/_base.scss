@@ -25,6 +25,14 @@ $font-display: "Josefin Sans", sans-serif;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 59rem) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 43rem) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -43,6 +51,20 @@ body {
     [center-end]
     minmax(min-content, 1fr)
     [full-end];
+
+  @media screen and (max-width: 56rem) {
+    grid-template-rows: 8rem 80vh min-content 40vw min-content min-content min-content;
+    grid-template-columns:
+      [full-start] 1fr
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end]
+      minmax(min-content, 1fr)
+      [full-end];
+  }
+
+  @media screen and (max-width: 56.18rem) {
+    grid-template-rows: 8rem 80vh min-content min-content min-content 50vh min-content min-content min-content;
+  }
 
   & > * {
     padding: 5rem 3rem;

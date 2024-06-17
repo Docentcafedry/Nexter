@@ -3,6 +3,11 @@
   grid-column: start-sidebar / end-sidebar;
   grid-row: 1 / -1;
 
+  @media screen and (max-width: 56.18rem) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
   .nav_button {
     border: none;
     height: 0.3rem;
@@ -10,6 +15,14 @@
     padding: 0.1rem 0;
     display: inline-block;
     transform: translate(-20%, -100%);
+
+    @media screen and (max-width: 43.2rem) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 56rem) {
+      transform: translateY(-2.5rem);
+    }
 
     &::before,
     &::after {
@@ -22,9 +35,24 @@
 
     &::before {
       transform: translateY(-2rem);
+
+      @media screen and (max-width: 43.2rem) {
+        transform: translate(0, 200%);
+      }
     }
     &::after {
       transform: translateY(-1.7rem);
+
+      @media screen and (max-width: 60rem) {
+        transform: translateY(-500%);
+      }
+      @media screen and (max-width: 58rem) {
+        transform: translateY(-2.5rem);
+      }
+
+      @media screen and (max-width: 43.2rem) {
+        transform: translate(0, -1000%);
+      }
     }
   }
 }

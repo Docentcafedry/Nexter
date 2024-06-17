@@ -7,11 +7,20 @@
   justify-content: center;
   flex-direction: column;
 
+  @media screen and (max-width: 56.18rem) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
   &--list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 3vh;
+
+    @media screen and (max-width: 56.18rem) {
+      flex-direction: row;
+    }
   }
 }
 

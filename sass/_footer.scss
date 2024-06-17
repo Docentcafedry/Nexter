@@ -6,6 +6,9 @@
   flex-direction: column;
   gap: 6rem;
 
+  @media screen and (max-width: 56.18rem) {
+    grid-row: 9 / -1;
+  }
   &_nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

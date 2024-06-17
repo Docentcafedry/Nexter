@@ -6,6 +6,10 @@
   grid-template-rows: 1fr 1fr;
   gap: 5rem;
   align-items: start;
+
+  @media screen and (max-width: 56rem) {
+    grid-row: 4 / 5;
+  }
 }
 
 .feature {
